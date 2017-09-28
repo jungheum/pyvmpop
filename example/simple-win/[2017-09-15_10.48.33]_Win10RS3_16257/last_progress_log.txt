@@ -1,0 +1,299 @@
+2017-09-15 10:48:33    pyvmpop.vmpop                                   INFO     basic_config(): Set the basic configurations
+2017-09-15 10:48:33    pyvmpop.vmpop                                   INFO     basic_config(): The temporary directory is C:\jungheum.park\0x01_CFReDS\2016.WR\0x02_sgrd\pyvmpop\resources\temp_d1d3f2fdf68825a4f59e0721b6e71ca409739ea1.
+2017-09-15 10:48:34    pyvmpop.automation.auto_windows                 INFO     pre_requirements(): Check pre-requirements
+2017-09-15 10:48:34    pyvmpop.vmpop                                   INFO     connect_to_vm(): Connect to a VM "Win10RS3_16257"
+2017-09-15 10:48:34    pyvmpop.hypervisor.hv_vbox                      INFO     connect_to_vm(): Connect to a VM
+2017-09-15 10:48:35    pyvmpop.hypervisor.hv_vbox                      INFO     start_vm()
+2017-09-15 10:48:42    pyvmpop.hypervisor.hv_vbox                      INFO     wait_vm_for_booting(): Run level is 'None'
+2017-09-15 10:49:16    pyvmpop.hypervisor.hv_vbox                      INFO     wait_vm_for_booting(): Run level is 'Userland'
+2017-09-15 10:49:23    pyvmpop.hypervisor.hv_vbox                      INFO     create_user_session(): ID(IEUser), PW(Passw0rd!)
+2017-09-15 10:49:23    pyvmpop.hypervisor.hv_vbox                      INFO     wait_vm_for_booting(): Run level is 'Userland'
+2017-09-15 10:49:25    pyvmpop.hypervisor.hv_vbox                      INFO     create_user_session(): Wait for 5 seconds
+2017-09-15 10:49:30    pyvmpop.hypervisor.hv_vbox                      INFO     validate_shared_directory()
+2017-09-15 10:49:30    pyvmpop.hypervisor.hv_vbox                      DEBUG    directory_exists(): Not found - \\VBOXSVR\VMPOP_SHARED_DIR
+2017-09-15 10:49:30    pyvmpop.hypervisor.hv_vbox                      INFO     create_shared_directory()
+2017-09-15 10:49:32    pyvmpop.hypervisor.hv_vbox                      INFO     send_event_keyboard(): PRESS(ENTER) + HOLD() for "Select 'CFTT' account"
+2017-09-15 10:49:32    pyvmpop.automation.auto_windows                 DEBUG    get_date_time(): Shared directory is invalid (not found)
+2017-09-15 10:49:34    pyvmpop.automation.auto_windows                 INFO     logon_account()
+2017-09-15 10:49:34    pyvmpop.automation.auto_windows                 DEBUG    get_date_time(): Shared directory is invalid (not found)
+2017-09-15 10:49:35    pyvmpop.hypervisor.hv_vbox                      INFO     send_event_keyboard(): PRESS(Passw0rd!) + HOLD() for "Password"
+2017-09-15 10:49:35    pyvmpop.automation.auto_windows                 DEBUG    get_date_time(): Shared directory is invalid (not found)
+2017-09-15 10:49:36    pyvmpop.hypervisor.hv_vbox                      INFO     send_event_keyboard(): PRESS(ENTER) + HOLD() for "Try to Logon"
+2017-09-15 10:49:36    pyvmpop.automation.auto_windows                 DEBUG    get_date_time(): Shared directory is invalid (not found)
+2017-09-15 10:49:41    pyvmpop.hypervisor.hv_vbox                      INFO     create_user_session(): ID(IEUser), PW(Passw0rd!)
+2017-09-15 10:49:41    pyvmpop.hypervisor.hv_vbox                      INFO     wait_vm_for_booting(): Run level is 'Userland'
+2017-09-15 10:49:43    pyvmpop.hypervisor.hv_vbox                      INFO     close_user_session(): IEUser
+2017-09-15 10:49:46    pyvmpop.hypervisor.hv_vbox                      INFO     create_user_session(): Wait for 5 seconds
+2017-09-15 10:49:52    pyvmpop.hypervisor.hv_vbox                      INFO     validate_shared_directory()
+2017-09-15 10:49:52    pyvmpop.hypervisor.hv_vbox                      DEBUG    directory_exists(): Not found - \\VBOXSVR\VMPOP_SHARED_DIR
+2017-09-15 10:49:55    pyvmpop.hypervisor.hv_vbox                      INFO     directory_exists(): Found - \\VBOXSVR\VMPOP_SHARED_DIR
+2017-09-15 10:49:55    pyvmpop.automation.auto_windows                 INFO     wait_for_idle(): DEFAULT_WAIT_S(10), TIMEOUT_MS(600000)
+2017-09-15 10:50:05    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): C:\Windows\System32\cmd.exe (['/C', '\\\\VBOXSVR\\VMPOP_SHARED_DIR\\windows\\wait_for_idle_windows.bat'])
+2017-09-15 10:50:05    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): PID(9040) is started ('process count' is 1)
+2017-09-15 10:58:23    pyvmpop.automation.auto_windows                 INFO     wait_for_idle(): ['( 7:50:08)CPU: 90', '( 7:50:10)CPU: 99', '( 7:50:11)CPU: 96', '( 7:50:16)CPU: 100', '( 7:50:26)CPU: 100', '( 7:50:34)CPU: 100', '( 7:50:43)CPU: 100', '( 7:50:48)CPU: 100', '( 7:50:50)CPU: 100', '( 7:50:51)CPU: 100', '( 7:50:53)CPU: 100', '( 7:50:54)CPU: 100', '( 7:50:56)CPU: 100', '( 7:50:57)CPU: 100', '( 7:50:58)CPU: 97', '( 7:51:00)CPU: 100', '( 7:51:01)CPU: 73', '( 7:51:03)CPU: 100', '( 7:51:04)CPU: 100', '( 7:51:05)CPU: 100', '( 7:51:07)CPU: 96', '( 7:51:08)CPU: 100', '( 7:51:10)CPU: 73', '( 7:51:11)CPU: 100', '( 7:51:12)CPU: 100', '( 7:51:14)CPU: 99', '( 7:51:15)CPU: 100', '( 7:51:16)CPU: 100', '( 7:51:18)CPU: 87', '( 7:51:19)CPU: 97', '( 7:51:20)CPU: 99', '( 7:51:22)CPU: 100', '( 7:51:23)CPU: 100', '( 7:51:25)CPU: 100', '( 7:51:26)CPU: 100', '( 7:51:27)CPU: 100', '( 7:51:29)CPU: 100', '( 7:51:30)CPU: 100', '( 7:51:32)CPU: 100', '( 7:51:33)CPU: 100', '( 7:51:34)CPU: 96', '( 7:51:36)CPU: 97', '( 7:51:37)CPU: 100', '( 7:51:38)CPU: 93', '( 7:51:40)CPU: 100', '( 7:51:41)CPU: 100', '( 7:51:42)CPU: 99', '( 7:51:44)CPU: 100', '( 7:51:45)CPU: 100', '( 7:51:46)CPU: 88', '( 7:51:48)CPU: 99', '( 7:51:49)CPU: 87', '( 7:51:50)CPU: 56', '( 7:51:52)CPU: 47', '( 7:51:53)CPU: 61', '( 7:51:54)CPU: 44', '( 7:51:56)CPU: 22', '( 7:51:57)CPU: 69', '( 7:51:58)CPU: 33', '( 7:52:00)CPU: 7', '( 7:52:01)CPU: 96', '( 7:52:02)CPU: 85', '( 7:52:04)CPU: 96', '( 7:52:05)CPU: 81', '( 7:52:06)CPU: 53', '( 7:52:07)CPU: 84', '( 7:52:09)CPU: 84', '( 7:52:10)CPU: 82', '( 7:52:11)CPU: 94', '( 7:52:13)CPU: 85', '( 7:52:14)CPU: 88', '( 7:52:15)CPU: 70', '( 7:52:17)CPU: 67', '( 7:52:18)CPU: 74', '( 7:52:19)CPU: 87', '( 7:52:21)CPU: 100', '( 7:52:22)CPU: 84', '( 7:52:24)CPU: 74', '( 7:52:25)CPU: 47', '( 7:52:26)CPU: 36', '( 7:52:27)CPU: 7', '( 7:52:29)CPU: 37', '( 7:52:30)CPU: 30', '( 7:52:31)CPU: 36', '( 7:52:32)CPU: 45', '( 7:52:34)CPU: 31', '( 7:52:35)CPU: 61', '( 7:52:36)CPU: 56', '( 7:52:38)CPU: 45', '( 7:52:39)CPU: 44', '( 7:52:40)CPU: 39', '( 7:52:42)CPU: 48', '( 7:52:43)CPU: 94', '( 7:52:44)CPU: 79', '( 7:52:45)CPU: 74', '( 7:52:47)CPU: 70', '( 7:52:48)CPU: 53', '( 7:52:49)CPU: 44', '( 7:52:51)CPU: 44', '( 7:52:52)CPU: 60', '( 7:52:53)CPU: 80', '( 7:52:54)CPU: 73', '( 7:52:56)CPU: 65', '( 7:52:57)CPU: 93', '( 7:52:58)CPU: 70', '( 7:53:00)CPU: 54', '( 7:53:01)CPU: 31', '( 7:53:02)CPU: 31', '( 7:53:03)CPU: 52', '( 7:53:05)CPU: 71', '( 7:53:06)CPU: 45', '( 7:53:07)CPU: 33', '( 7:53:08)CPU: 70', '( 7:53:10)CPU: 85', '( 7:53:11)CPU: 94', '( 7:53:12)CPU: 100', '( 7:53:14)CPU: 96', '( 7:53:15)CPU: 100', '( 7:53:16)CPU: 96', '( 7:53:18)CPU: 100', '( 7:53:19)CPU: 87', '( 7:53:20)CPU: 100', '( 7:53:22)CPU: 88', '( 7:53:23)CPU: 94', '( 7:53:25)CPU: 59', '( 7:53:26)CPU: 74', '( 7:53:27)CPU: 82', '( 7:53:28)CPU: 85', '( 7:53:30)CPU: 61', '( 7:53:31)CPU: 73', '( 7:53:32)CPU: 82', '( 7:53:34)CPU: 76', '( 7:53:35)CPU: 53', '( 7:53:36)CPU: 68', '( 7:53:37)CPU: 94', '( 7:53:39)CPU: 87', '( 7:53:40)CPU: 100', '( 7:53:41)CPU: 100', '( 7:53:43)CPU: 90', '( 7:53:44)CPU: 76', '( 7:53:45)CPU: 97', '( 7:53:47)CPU: 62', '( 7:53:48)CPU: 54', '( 7:53:49)CPU: 96', '( 7:53:51)CPU: 91', '( 7:53:52)CPU: 77', '( 7:53:53)CPU: 65', '( 7:53:55)CPU: 76', '( 7:53:56)CPU: 71', '( 7:53:57)CPU: 56', '( 7:53:58)CPU: 72', '( 7:54:00)CPU: 69', '( 7:54:01)CPU: 96', '( 7:54:02)CPU: 90', '( 7:54:04)CPU: 53', '( 7:54:05)CPU: 37', '( 7:54:06)CPU: 51', '( 7:54:07)CPU: 74', '( 7:54:09)CPU: 87', '( 7:54:10)CPU: 71', '( 7:54:11)CPU: 62', '( 7:54:13)CPU: 91', '( 7:54:14)CPU: 74', '( 7:54:15)CPU: 82', '( 7:54:17)CPU: 91', '( 7:54:18)CPU: 90', '( 7:54:19)CPU: 93', '( 7:54:21)CPU: 97', '( 7:54:22)CPU: 85', '( 7:54:23)CPU: 51', '( 7:54:25)CPU: 51', '( 7:54:26)CPU: 28', '( 7:54:27)CPU: 28', '( 7:54:28)CPU: 17', '( 7:54:30)CPU: 19', '( 7:54:31)CPU: 50', '( 7:54:32)CPU: 54', '( 7:54:34)CPU: 46', '( 7:54:35)CPU: 36', '( 7:54:36)CPU: 19', '( 7:54:37)CPU: 31', '( 7:54:39)CPU: 39', '( 7:54:40)CPU: 62', '( 7:54:41)CPU: 96', '( 7:54:43)CPU: 96', '( 7:54:44)CPU: 51', '( 7:54:45)CPU: 48', '( 7:54:46)CPU: 62', '( 7:54:48)CPU: 57', '( 7:54:49)CPU: 48', '( 7:54:50)CPU: 8', '( 7:54:51)CPU: 51', '( 7:54:53)CPU: 44', '( 7:54:54)CPU: 30', '( 7:54:55)CPU: 45', '( 7:54:57)CPU: 76', '( 7:54:58)CPU: 53', '( 7:54:59)CPU: 50', '( 7:55:00)CPU: 51', '( 7:55:02)CPU: 20', '( 7:55:03)CPU: 31', '( 7:55:04)CPU: 13', '( 7:55:06)CPU: 22', '( 7:55:07)CPU: 42', '( 7:55:08)CPU: 28', '( 7:55:10)CPU: 51', '( 7:55:11)CPU: 42', '( 7:55:12)CPU: 50', '( 7:55:13)CPU: 36', '( 7:55:15)CPU: 21', '( 7:55:16)CPU: 51', '( 7:55:17)CPU: 45', '( 7:55:18)CPU: 84', '( 7:55:20)CPU: 57', '( 7:55:21)CPU: 8', '( 7:55:22)CPU: 19', '( 7:55:23)CPU: 14', '( 7:55:25)CPU: 16', '( 7:55:26)CPU: 45', '( 7:55:27)CPU: 28', '( 7:55:29)CPU: 51', '( 7:55:30)CPU: 27', '( 7:55:31)CPU: 28', '( 7:55:32)CPU: 56', '( 7:55:34)CPU: 54', '( 7:55:35)CPU: 28', '( 7:55:36)CPU: 70', '( 7:55:38)CPU: 62', '( 7:55:39)CPU: 40', '( 7:55:40)CPU: 22', '( 7:55:41)CPU: 13', '( 7:55:43)CPU: 26', '( 7:55:44)CPU: 33', '( 7:55:45)CPU: 46', '( 7:55:47)CPU: 37', '( 7:55:48)CPU: 28', '( 7:55:49)CPU: 48', '( 7:55:50)CPU: 34', '( 7:55:52)CPU: 37', '( 7:55:53)CPU: 39', '( 7:55:54)CPU: 45', '( 7:55:55)CPU: 74', '( 7:55:57)CPU: 67', '( 7:55:58)CPU: 90', '( 7:55:59)CPU: 37', '( 7:56:01)CPU: 73', '( 7:56:02)CPU: 53', '( 7:56:03)CPU: 33', '( 7:56:04)CPU: 45', '( 7:56:06)CPU: 59', '( 7:56:07)CPU: 77', '( 7:56:08)CPU: 80', '( 7:56:10)CPU: 99', '( 7:56:11)CPU: 88', '( 7:56:12)CPU: 60', '( 7:56:14)CPU: 97', '( 7:56:15)CPU: 97', '( 7:56:16)CPU: 62', '( 7:56:18)CPU: 81', '( 7:56:19)CPU: 73', '( 7:56:20)CPU: 54', '( 7:56:21)CPU: 74', '( 7:56:23)CPU: 54', '( 7:56:24)CPU: 24', '( 7:56:25)CPU: 56', '( 7:56:26)CPU: 74', '( 7:56:28)CPU: 93', '( 7:56:29)CPU: 99', '( 7:56:30)CPU: 82', '( 7:56:32)CPU: 85', '( 7:56:33)CPU: 51', '( 7:56:34)CPU: 60', '( 7:56:36)CPU: 41', '( 7:56:37)CPU: 58', '( 7:56:38)CPU: 22', '( 7:56:39)CPU: 37', '( 7:56:41)CPU: 53', '( 7:56:42)CPU: 47', '( 7:56:43)CPU: 62', '( 7:56:45)CPU: 45', '( 7:56:46)CPU: 60', '( 7:56:47)CPU: 74', '( 7:56:49)CPU: 100', '( 7:56:50)CPU: 94', '( 7:56:51)CPU: 84', '( 7:56:53)CPU: 82', '( 7:56:54)CPU: 64', '( 7:56:55)CPU: 68', '( 7:56:56)CPU: 28', '( 7:56:58)CPU: 57', '( 7:56:59)CPU: 48', '( 7:57:00)CPU: 54', '( 7:57:02)CPU: 79', '( 7:57:03)CPU: 59', '( 7:57:04)CPU: 57', '( 7:57:05)CPU: 14', '( 7:57:07)CPU: 39', '( 7:57:08)CPU: 46', '( 7:57:09)CPU: 37', '( 7:57:10)CPU: 25', '( 7:57:12)CPU: 24', '( 7:57:13)CPU: 36', '( 7:57:14)CPU: 22', '( 7:57:15)CPU: 67', '( 7:57:17)CPU: 79', '( 7:57:18)CPU: 61', '( 7:57:19)CPU: 78', '( 7:57:21)CPU: 10', '( 7:57:22)CPU: 11', '( 7:57:23)CPU: 7', '( 7:57:24)CPU: 22', '( 7:57:26)CPU: 16', '( 7:57:27)CPU: 45', '( 7:57:28)CPU: 31', '( 7:57:29)CPU: 37', '( 7:57:31)CPU: 70', '( 7:57:32)CPU: 100', '( 7:57:33)CPU: 100', '( 7:57:35)CPU: 100', '( 7:57:36)CPU: 100', '( 7:57:37)CPU: 100', '( 7:57:38)CPU: 100', '( 7:57:40)CPU: 100', '( 7:57:41)CPU: 100', '( 7:57:42)CPU: 100', '( 7:57:44)CPU: 100', '( 7:57:45)CPU: 100', '( 7:57:46)CPU: 100', '( 7:57:48)CPU: 100', '( 7:57:49)CPU: 100', '( 7:57:50)CPU: 100', '( 7:57:52)CPU: 100', '( 7:57:53)CPU: 100', '( 7:57:54)CPU: 100', '( 7:57:56)CPU: 100', '( 7:57:57)CPU: 100', '( 7:57:58)CPU: 100', '( 7:57:59)CPU: 100', '( 7:58:01)CPU: 100', '( 7:58:02)CPU: 100', '( 7:58:03)CPU: 100', '( 7:58:05)CPU: 100', '( 7:58:06)CPU: 100', '( 7:58:07)CPU: 100', '( 7:58:09)CPU: 67', '( 7:58:10)CPU: 16', '( 7:58:11)CPU: 42', '( 7:58:12)CPU: 61', '( 7:58:14)CPU: 44', '( 7:58:15)CPU: 17', '( 7:58:16)CPU: 1', '( 7:58:17)CPU: 1', '( 7:58:19)CPU: 2', '( 7:58:20)CPU: 4', '( 7:58:21)CPU: 1', '( 7:58:22)CPU: 0']
+2017-09-15 10:58:23    pyvmpop.automation.auto_windows                 INFO     wait_for_idle(): The system is ready to use (IDLE status)
+2017-09-15 10:58:29    pyvmpop.hypervisor.hv_vbox                      INFO     set_resolution(): WIDTH(1024), Height(768)
+2017-09-15 10:58:29    pyvmpop.automation.auto_windows                 INFO     disable_uac()
+2017-09-15 10:58:29    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): C:\Windows\System32\cmd.exe (['/C', '\\\\VBOXSVR\\VMPOP_SHARED_DIR\\windows\\get_date_time_windows.bat'])
+2017-09-15 10:58:29    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): PID(2792) is started ('process count' is 2)
+2017-09-15 10:58:30    pyvmpop.automation.auto_windows                 INFO     execute_powershell_script(): TIMEOUT_MS(30000), DELAY_S(15), RUN_AS_ADMIN(True)
+2017-09-15 10:58:30    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe (['-NoProfile', '-ExecutionPolicy', 'bypass', '-file', '\\\\VBOXSVR\\VMPOP_SHARED_DIR\\temp_d1d3f2fdf68825a4f59e0721b6e71ca409739ea1\\temp.ps1'])
+2017-09-15 10:58:30    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): PID(7492) is started ('process count' is 3)
+2017-09-15 10:58:45    pyvmpop.hypervisor.hv_vbox                      INFO     get_screen(): Get the VM information
+2017-09-15 10:58:45    pyvmpop.hypervisor.hv_vbox                      INFO     send_event_mouse(): X(512), Y(384), MODE(PRESS), CLICK(LCLICK)
+2017-09-15 10:58:45    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): C:\Windows\System32\cmd.exe (['/C', '\\\\VBOXSVR\\VMPOP_SHARED_DIR\\windows\\get_date_time_windows.bat'])
+2017-09-15 10:58:45    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): PID(5436) is started ('process count' is 4)
+2017-09-15 10:58:46    pyvmpop.hypervisor.hv_vbox                      INFO     send_event_mouse(): X(512), Y(384), MODE(RELEASE), CLICK(LCLICK)
+2017-09-15 10:58:46    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): C:\Windows\System32\cmd.exe (['/C', '\\\\VBOXSVR\\VMPOP_SHARED_DIR\\windows\\get_date_time_windows.bat'])
+2017-09-15 10:58:46    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): PID(2292) is started ('process count' is 5)
+2017-09-15 10:58:46    pyvmpop.hypervisor.hv_vbox                      INFO     send_event_keyboard(): PRESS(y) + HOLD(ALT) for "Click 'Yes'"
+2017-09-15 10:58:46    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): C:\Windows\System32\cmd.exe (['/C', '\\\\VBOXSVR\\VMPOP_SHARED_DIR\\windows\\get_date_time_windows.bat'])
+2017-09-15 10:58:46    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): PID(4656) is started ('process count' is 6)
+2017-09-15 10:59:00    pyvmpop.hypervisor.hv_vbox                      INFO     send_event_keyboard(): PRESS(ESC) + HOLD()
+2017-09-15 10:59:00    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): C:\Windows\System32\cmd.exe (['/C', '\\\\VBOXSVR\\VMPOP_SHARED_DIR\\windows\\get_date_time_windows.bat'])
+2017-09-15 10:59:00    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): PID(6924) is started ('process count' is 7)
+2017-09-15 10:59:01    pyvmpop.automation.auto_windows                 INFO     disable_uac()
+2017-09-15 10:59:01    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): C:\Windows\System32\cmd.exe (['/C', '\\\\VBOXSVR\\VMPOP_SHARED_DIR\\windows\\get_date_time_windows.bat'])
+2017-09-15 10:59:02    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): PID(3912) is started ('process count' is 8)
+2017-09-15 10:59:02    pyvmpop.automation.auto_windows                 INFO     execute_powershell_script(): TIMEOUT_MS(30000), DELAY_S(10), RUN_AS_ADMIN(True)
+2017-09-15 10:59:02    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe (['-NoProfile', '-ExecutionPolicy', 'bypass', '-file', '\\\\VBOXSVR\\VMPOP_SHARED_DIR\\temp_d1d3f2fdf68825a4f59e0721b6e71ca409739ea1\\temp.ps1'])
+2017-09-15 10:59:02    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): PID(9204) is started ('process count' is 9)
+2017-09-15 10:59:12    pyvmpop.hypervisor.hv_vbox                      INFO     get_screen(): Get the VM information
+2017-09-15 10:59:12    pyvmpop.hypervisor.hv_vbox                      INFO     send_event_mouse(): X(512), Y(384), MODE(PRESS), CLICK(LCLICK)
+2017-09-15 10:59:12    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): C:\Windows\System32\cmd.exe (['/C', '\\\\VBOXSVR\\VMPOP_SHARED_DIR\\windows\\get_date_time_windows.bat'])
+2017-09-15 10:59:13    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): PID(8868) is started ('process count' is 10)
+2017-09-15 10:59:13    pyvmpop.hypervisor.hv_vbox                      INFO     send_event_mouse(): X(512), Y(384), MODE(RELEASE), CLICK(LCLICK)
+2017-09-15 10:59:13    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): C:\Windows\System32\cmd.exe (['/C', '\\\\VBOXSVR\\VMPOP_SHARED_DIR\\windows\\get_date_time_windows.bat'])
+2017-09-15 10:59:13    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): PID(6244) is started ('process count' is 11)
+2017-09-15 10:59:14    pyvmpop.hypervisor.hv_vbox                      INFO     send_event_keyboard(): PRESS(y) + HOLD(ALT) for "Click 'Yes'"
+2017-09-15 10:59:14    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): C:\Windows\System32\cmd.exe (['/C', '\\\\VBOXSVR\\VMPOP_SHARED_DIR\\windows\\get_date_time_windows.bat'])
+2017-09-15 10:59:14    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): PID(2768) is started ('process count' is 12)
+2017-09-15 10:59:32    pyvmpop.automation.auto_windows                 INFO     disable_windows_update()
+2017-09-15 10:59:32    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): C:\Windows\System32\cmd.exe (['/C', '\\\\VBOXSVR\\VMPOP_SHARED_DIR\\windows\\get_date_time_windows.bat'])
+2017-09-15 10:59:32    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): PID(7120) is started ('process count' is 13)
+2017-09-15 10:59:33    pyvmpop.automation.auto_windows                 INFO     execute_powershell_script(): TIMEOUT_MS(60000), DELAY_S(0.1), RUN_AS_ADMIN(True)
+2017-09-15 10:59:33    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe (['-NoProfile', '-ExecutionPolicy', 'bypass', '-file', '\\\\VBOXSVR\\VMPOP_SHARED_DIR\\temp_d1d3f2fdf68825a4f59e0721b6e71ca409739ea1\\temp.ps1'])
+2017-09-15 10:59:33    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): PID(9016) is started ('process count' is 14)
+2017-09-15 10:59:34    pyvmpop.automation.auto_windows                 INFO     restart()
+2017-09-15 10:59:37    pyvmpop.hypervisor.hv_vbox                      INFO     stop_vm()
+2017-09-15 10:59:37    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): C:\Windows\System32\cmd.exe (['/C', '\\\\VBOXSVR\\VMPOP_SHARED_DIR\\windows\\get_date_time_windows.bat'])
+2017-09-15 10:59:37    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): PID(8368) is started ('process count' is 15)
+2017-09-15 10:59:38    pyvmpop.hypervisor.hv_vbox                      INFO     close_user_session(): IEUser
+2017-09-15 10:59:52    pyvmpop.hypervisor.hv_vbox                      INFO     start_vm()
+2017-09-15 10:59:58    pyvmpop.hypervisor.hv_vbox                      INFO     wait_vm_for_booting(): Run level is 'None'
+2017-09-15 11:00:22    pyvmpop.hypervisor.hv_vbox                      INFO     wait_vm_for_booting(): Run level is 'Userland'
+2017-09-15 11:00:29    pyvmpop.hypervisor.hv_vbox                      INFO     send_event_keyboard(): PRESS(ENTER) + HOLD() for "Select 'CFTT' account"
+2017-09-15 11:00:30    pyvmpop.automation.auto_windows                 INFO     logon_account()
+2017-09-15 11:00:31    pyvmpop.hypervisor.hv_vbox                      INFO     send_event_keyboard(): PRESS(Passw0rd!) + HOLD() for "Password"
+2017-09-15 11:00:32    pyvmpop.hypervisor.hv_vbox                      INFO     send_event_keyboard(): PRESS(ENTER) + HOLD() for "Try to Logon"
+2017-09-15 11:00:37    pyvmpop.hypervisor.hv_vbox                      INFO     create_user_session(): ID(IEUser), PW(Passw0rd!)
+2017-09-15 11:00:37    pyvmpop.hypervisor.hv_vbox                      INFO     wait_vm_for_booting(): Run level is 'Userland'
+2017-09-15 11:00:40    pyvmpop.hypervisor.hv_vbox                      INFO     create_user_session(): Wait for 5 seconds
+2017-09-15 11:00:45    pyvmpop.hypervisor.hv_vbox                      INFO     validate_shared_directory()
+2017-09-15 11:00:45    pyvmpop.hypervisor.hv_vbox                      DEBUG    directory_exists(): Not found - \\VBOXSVR\VMPOP_SHARED_DIR
+2017-09-15 11:00:48    pyvmpop.hypervisor.hv_vbox                      DEBUG    directory_exists(): Not found - \\VBOXSVR\VMPOP_SHARED_DIR
+2017-09-15 11:00:51    pyvmpop.hypervisor.hv_vbox                      INFO     directory_exists(): Found - \\VBOXSVR\VMPOP_SHARED_DIR
+2017-09-15 11:00:51    pyvmpop.automation.auto_windows                 INFO     wait_for_idle(): DEFAULT_WAIT_S(10), TIMEOUT_MS(600000)
+2017-09-15 11:01:01    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): C:\Windows\System32\cmd.exe (['/C', '\\\\VBOXSVR\\VMPOP_SHARED_DIR\\windows\\wait_for_idle_windows.bat'])
+2017-09-15 11:01:01    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): PID(6060) is started ('process count' is 1)
+2017-09-15 11:01:12    pyvmpop.automation.auto_windows                 INFO     wait_for_idle(): ['( 8:01:03)CPU: 30', '( 8:01:04)CPU: 13', '( 8:01:05)CPU: 2', '( 8:01:06)CPU: 1', '( 8:01:08)CPU: 0', '( 8:01:09)CPU: 1', '( 8:01:10)CPU: 0', '( 8:01:11)CPU: 1']
+2017-09-15 11:01:12    pyvmpop.automation.auto_windows                 INFO     wait_for_idle(): The system is ready to use (IDLE status)
+2017-09-15 11:01:18    pyvmpop.hypervisor.hv_vbox                      INFO     start_video_capturing(): Win10RS3_16257.webm
+2017-09-15 11:01:18    pyvmpop.automation.auto_windows                 INFO     launch_program(): shell:AppsFolder\Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge
+2017-09-15 11:01:18    pyvmpop.monitoring.evtmon_windows               INFO     start(): EVENT_NO(1), EVENT(Launch a program)
+2017-09-15 11:01:18    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): C:\Windows\System32\cmd.exe (['/C', '\\\\VBOXSVR\\VMPOP_SHARED_DIR\\windows\\get_date_time_windows.bat'])
+2017-09-15 11:01:18    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): PID(6964) is started ('process count' is 2)
+2017-09-15 11:01:19    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): \\VBOXSVR\VMPOP_SHARED_DIR\windows\monitor\procmon.exe (['/AcceptEula', '/Quiet', '/Nofilter', '/BackingFile', '\\\\VBOXSVR\\VMPOP_SHARED_DIR\\temp_d1d3f2fdf68825a4f59e0721b6e71ca409739ea1\\temp_1.pml'])
+2017-09-15 11:01:19    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): PID(5820) is started ('process count' is 3)
+2017-09-15 11:01:22    pyvmpop.monitoring.evtmon_windows               INFO     start(): The size of the first PML file is 12.0 MB
+2017-09-15 11:01:34    pyvmpop.monitoring.evtmon_windows               INFO     start(): The size of the first PML file is 20.0 MB
+2017-09-15 11:01:34    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): C:\Windows\System32\cmd.exe (['/C', '\\\\VBOXSVR\\VMPOP_SHARED_DIR\\windows\\get_date_time_windows.bat'])
+2017-09-15 11:01:34    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): PID(868) is started ('process count' is 4)
+2017-09-15 11:01:35    pyvmpop.automation.auto_windows                 INFO     execute_powershell_script(): TIMEOUT_MS(20000), DELAY_S(0.1), RUN_AS_ADMIN(False)
+2017-09-15 11:01:35    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe (['-NoProfile', '-ExecutionPolicy', 'bypass', '-file', '\\\\VBOXSVR\\VMPOP_SHARED_DIR\\temp_d1d3f2fdf68825a4f59e0721b6e71ca409739ea1\\temp.ps1'])
+2017-09-15 11:01:35    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): PID(4936) is started ('process count' is 5)
+2017-09-15 11:01:43    pyvmpop.automation.auto_windows                 DEBUG    execute_powershell_script(): [stderr] Start-Process : This command cannot be run completely because the system cannot find all the information required. At \\...
+2017-09-15 11:01:43    pyvmpop.automation.auto_windows                 INFO     launch_program(): Launched program's PID is 4444
+2017-09-15 11:01:43    pyvmpop.automation.auto_windows                 INFO     set_foreground_window(): PNAME(), PID(4444), TITLE()
+2017-09-15 11:01:43    pyvmpop.automation.auto_windows                 INFO     execute_powershell_script(): TIMEOUT_MS(60000), DELAY_S(0.1), RUN_AS_ADMIN(False)
+2017-09-15 11:01:43    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe (['-NoProfile', '-ExecutionPolicy', 'bypass', '-file', '\\\\VBOXSVR\\VMPOP_SHARED_DIR\\temp_d1d3f2fdf68825a4f59e0721b6e71ca409739ea1\\temp.ps1'])
+2017-09-15 11:01:43    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): PID(4380) is started ('process count' is 6)
+2017-09-15 11:01:51    pyvmpop.monitoring.evtmon_windows               INFO     stop(): EVENT_NO(1), AGENT_PID(5820)
+2017-09-15 11:01:51    pyvmpop.monitoring.evtmon_windows               INFO     stop(): This event took 17.416 seconds
+2017-09-15 11:01:51    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): C:\Windows\System32\cmd.exe (['/C', '\\\\VBOXSVR\\VMPOP_SHARED_DIR\\windows\\get_date_time_windows.bat'])
+2017-09-15 11:01:52    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): PID(7980) is started ('process count' is 7)
+2017-09-15 11:01:52    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): \\VBOXSVR\VMPOP_SHARED_DIR\windows\monitor\procmon.exe (['/AcceptEula', '/Terminate'])
+2017-09-15 11:01:52    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): PID(8144) is started ('process count' is 8)
+2017-09-15 11:01:59    pyvmpop.monitoring.evtmon_windows               INFO     post_process(): EVENT_NO(1), TIME_RANGE([('2017-09-15', '08:01:18', '(UTC-08:00) Pacific Time (US & Canada)'), ('2017-09-15', '08:01:52', '(UTC-08:00) Pacific Time (US & Canada)')])
+2017-09-15 11:01:59    pyvmpop.monitoring.evtmon_windows               INFO     post_process(): The size of the first PML file is 354.0 MB (371149496 Bytes)
+2017-09-15 11:01:59    pyvmpop.monitoring.evtmon_windows               INFO     convert_pml_to_csv(): Create a CSV (\\VBOXSVR\VMPOP_SHARED_DIR\temp_d1d3f2fdf68825a4f59e0721b6e71ca409739ea1\temp_1.csv) 
+2017-09-15 11:01:59    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): \\VBOXSVR\VMPOP_SHARED_DIR\windows\monitor\procmon.exe (['/AcceptEula', '/Quiet', '/OpenLog', '\\\\VBOXSVR\\VMPOP_SHARED_DIR\\temp_d1d3f2fdf68825a4f59e0721b6e71ca409739ea1\\temp_1.pml', '/LoadConfig', '\\\\VBOXSVR\\VMPOP_SHARED_DIR\\windows\\monitor\\procmon_vmpop.pmc', '/SaveApplyFilter', '/SaveAs', '\\\\VBOXSVR\\VMPOP_SHARED_DIR\\temp_d1d3f2fdf68825a4f59e0721b6e71ca409739ea1\\temp_1.csv'])
+2017-09-15 11:01:59    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): PID(7708) is started ('process count' is 9)
+2017-09-15 11:02:00    pyvmpop.monitoring.evtmon_windows               INFO     convert_pml_to_csv(): Wait until the monitor process is terminated
+2017-09-15 11:02:12    pyvmpop.monitoring.evtmon_windows               INFO     convert_pml_to_csv(): The monitor process is terminated
+2017-09-15 11:02:12    pyvmpop.logging.evtlog_manager                  INFO     save_as_csv(): Save as CSV to (C:\jungheum.park\0x01_CFReDS\2016.WR\0x02_sgrd\pyvmpop\example\simple-win\[2017-09-15_10.48.33]_Win10RS3_16257//(E_0001)_(A_0025)_(2017-09-15_08.01.18)~(2017-09-15_08.01.52)_Events.csv) 
+2017-09-15 11:02:14    pyvmpop.automation.auto_windows                 INFO     set_foreground_window(): PNAME(), PID(-1), TITLE(Edge)
+2017-09-15 11:02:14    pyvmpop.automation.auto_windows                 INFO     execute_powershell_script(): TIMEOUT_MS(60000), DELAY_S(0.1), RUN_AS_ADMIN(False)
+2017-09-15 11:02:14    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe (['-NoProfile', '-ExecutionPolicy', 'bypass', '-file', '\\\\VBOXSVR\\VMPOP_SHARED_DIR\\temp_d1d3f2fdf68825a4f59e0721b6e71ca409739ea1\\temp.ps1'])
+2017-09-15 11:02:14    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): PID(8188) is started ('process count' is 10)
+2017-09-15 11:02:15    pyvmpop.automation.auto_windows                 INFO     maximize_window()
+2017-09-15 11:02:15    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): C:\Windows\System32\cmd.exe (['/C', '\\\\VBOXSVR\\VMPOP_SHARED_DIR\\windows\\get_date_time_windows.bat'])
+2017-09-15 11:02:15    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): PID(5380) is started ('process count' is 11)
+2017-09-15 11:02:16    pyvmpop.hypervisor.hv_vbox                      INFO     send_event_keyboard(): PRESS(SPACE) + HOLD(ALT) for "Open the menu"
+2017-09-15 11:02:16    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): C:\Windows\System32\cmd.exe (['/C', '\\\\VBOXSVR\\VMPOP_SHARED_DIR\\windows\\get_date_time_windows.bat'])
+2017-09-15 11:02:16    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): PID(276) is started ('process count' is 12)
+2017-09-15 11:02:17    pyvmpop.hypervisor.hv_vbox                      INFO     send_event_keyboard(): PRESS(x) + HOLD() for "Click 'Maximize'"
+2017-09-15 11:02:17    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): C:\Windows\System32\cmd.exe (['/C', '\\\\VBOXSVR\\VMPOP_SHARED_DIR\\windows\\get_date_time_windows.bat'])
+2017-09-15 11:02:18    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): PID(3244) is started ('process count' is 13)
+2017-09-15 11:02:21    pyvmpop.automation.auto_windows                 INFO     control_web_browser(): NEW_TAB
+2017-09-15 11:02:21    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): C:\Windows\System32\cmd.exe (['/C', '\\\\VBOXSVR\\VMPOP_SHARED_DIR\\windows\\get_date_time_windows.bat'])
+2017-09-15 11:02:21    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): PID(7972) is started ('process count' is 14)
+2017-09-15 11:02:21    pyvmpop.hypervisor.hv_vbox                      INFO     send_event_keyboard(): PRESS(t) + HOLD(CTRL) for "Create a new tap"
+2017-09-15 11:02:21    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): C:\Windows\System32\cmd.exe (['/C', '\\\\VBOXSVR\\VMPOP_SHARED_DIR\\windows\\get_date_time_windows.bat'])
+2017-09-15 11:02:21    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): PID(4376) is started ('process count' is 15)
+2017-09-15 11:02:25    pyvmpop.automation.auto_windows                 INFO     control_web_browser(): VISIT_URL
+2017-09-15 11:02:25    pyvmpop.monitoring.evtmon_windows               INFO     start(): EVENT_NO(2), EVENT(Control a process)
+2017-09-15 11:02:25    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): C:\Windows\System32\cmd.exe (['/C', '\\\\VBOXSVR\\VMPOP_SHARED_DIR\\windows\\get_date_time_windows.bat'])
+2017-09-15 11:02:25    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): PID(8400) is started ('process count' is 16)
+2017-09-15 11:02:26    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): \\VBOXSVR\VMPOP_SHARED_DIR\windows\monitor\procmon.exe (['/AcceptEula', '/Quiet', '/Nofilter', '/BackingFile', '\\\\VBOXSVR\\VMPOP_SHARED_DIR\\temp_d1d3f2fdf68825a4f59e0721b6e71ca409739ea1\\temp_2.pml'])
+2017-09-15 11:02:26    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): PID(8564) is started ('process count' is 17)
+2017-09-15 11:02:30    pyvmpop.monitoring.evtmon_windows               INFO     start(): The size of the first PML file is 36.0 MB
+2017-09-15 11:02:30    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): C:\Windows\System32\cmd.exe (['/C', '\\\\VBOXSVR\\VMPOP_SHARED_DIR\\windows\\get_date_time_windows.bat'])
+2017-09-15 11:02:30    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): PID(9208) is started ('process count' is 18)
+2017-09-15 11:02:31    pyvmpop.hypervisor.hv_vbox                      INFO     send_event_keyboard(): PRESS(d) + HOLD(ALT) for "Move the focus to the address bar"
+2017-09-15 11:02:31    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): C:\Windows\System32\cmd.exe (['/C', '\\\\VBOXSVR\\VMPOP_SHARED_DIR\\windows\\get_date_time_windows.bat'])
+2017-09-15 11:02:31    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): PID(7300) is started ('process count' is 19)
+2017-09-15 11:02:33    pyvmpop.hypervisor.hv_vbox                      INFO     send_event_keyboard(): PRESS(www.cfreds.nist.gov) + HOLD()
+2017-09-15 11:02:33    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): C:\Windows\System32\cmd.exe (['/C', '\\\\VBOXSVR\\VMPOP_SHARED_DIR\\windows\\get_date_time_windows.bat'])
+2017-09-15 11:02:33    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): PID(9036) is started ('process count' is 20)
+2017-09-15 11:02:37    pyvmpop.hypervisor.hv_vbox                      INFO     send_event_keyboard(): PRESS(ENTER) + HOLD() for "Visit the URL"
+2017-09-15 11:02:37    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): C:\Windows\System32\cmd.exe (['/C', '\\\\VBOXSVR\\VMPOP_SHARED_DIR\\windows\\get_date_time_windows.bat'])
+2017-09-15 11:02:37    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): PID(9092) is started ('process count' is 21)
+2017-09-15 11:02:42    pyvmpop.monitoring.evtmon_windows               INFO     stop(): EVENT_NO(2), AGENT_PID(8564)
+2017-09-15 11:02:42    pyvmpop.monitoring.evtmon_windows               INFO     stop(): This event took 12.079 seconds
+2017-09-15 11:02:42    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): C:\Windows\System32\cmd.exe (['/C', '\\\\VBOXSVR\\VMPOP_SHARED_DIR\\windows\\get_date_time_windows.bat'])
+2017-09-15 11:02:42    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): PID(6924) is started ('process count' is 22)
+2017-09-15 11:02:43    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): \\VBOXSVR\VMPOP_SHARED_DIR\windows\monitor\procmon.exe (['/AcceptEula', '/Terminate'])
+2017-09-15 11:02:43    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): PID(8804) is started ('process count' is 23)
+2017-09-15 11:02:47    pyvmpop.monitoring.evtmon_windows               INFO     post_process(): EVENT_NO(2), TIME_RANGE([('2017-09-15', '08:02:25', '(UTC-08:00) Pacific Time (US & Canada)'), ('2017-09-15', '08:02:42', '(UTC-08:00) Pacific Time (US & Canada)')])
+2017-09-15 11:02:47    pyvmpop.monitoring.evtmon_windows               INFO     post_process(): The size of the first PML file is 171.5 MB (179866803 Bytes)
+2017-09-15 11:02:47    pyvmpop.monitoring.evtmon_windows               INFO     convert_pml_to_csv(): Create a CSV (\\VBOXSVR\VMPOP_SHARED_DIR\temp_d1d3f2fdf68825a4f59e0721b6e71ca409739ea1\temp_2.csv) 
+2017-09-15 11:02:47    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): \\VBOXSVR\VMPOP_SHARED_DIR\windows\monitor\procmon.exe (['/AcceptEula', '/Quiet', '/OpenLog', '\\\\VBOXSVR\\VMPOP_SHARED_DIR\\temp_d1d3f2fdf68825a4f59e0721b6e71ca409739ea1\\temp_2.pml', '/LoadConfig', '\\\\VBOXSVR\\VMPOP_SHARED_DIR\\windows\\monitor\\procmon_vmpop.pmc', '/SaveApplyFilter', '/SaveAs', '\\\\VBOXSVR\\VMPOP_SHARED_DIR\\temp_d1d3f2fdf68825a4f59e0721b6e71ca409739ea1\\temp_2.csv'])
+2017-09-15 11:02:47    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): PID(7848) is started ('process count' is 24)
+2017-09-15 11:02:48    pyvmpop.monitoring.evtmon_windows               INFO     convert_pml_to_csv(): Wait until the monitor process is terminated
+2017-09-15 11:02:51    pyvmpop.monitoring.evtmon_windows               INFO     convert_pml_to_csv(): The monitor process is terminated
+2017-09-15 11:02:51    pyvmpop.logging.evtlog_manager                  INFO     save_as_csv(): Save as CSV to (C:\jungheum.park\0x01_CFReDS\2016.WR\0x02_sgrd\pyvmpop\example\simple-win\[2017-09-15_10.48.33]_Win10RS3_16257//(E_0002)_(A_0036)_(2017-09-15_08.02.25)~(2017-09-15_08.02.42)_Events.csv) 
+2017-09-15 11:02:53    pyvmpop.automation.auto_windows                 INFO     set_foreground_window(): PNAME(), PID(-1), TITLE(Edge)
+2017-09-15 11:02:53    pyvmpop.automation.auto_windows                 INFO     execute_powershell_script(): TIMEOUT_MS(60000), DELAY_S(0.1), RUN_AS_ADMIN(False)
+2017-09-15 11:02:53    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe (['-NoProfile', '-ExecutionPolicy', 'bypass', '-file', '\\\\VBOXSVR\\VMPOP_SHARED_DIR\\temp_d1d3f2fdf68825a4f59e0721b6e71ca409739ea1\\temp.ps1'])
+2017-09-15 11:02:53    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): PID(1260) is started ('process count' is 25)
+2017-09-15 11:02:55    pyvmpop.automation.auto_windows                 INFO     terminate_process(): PID(4444), NAME()
+2017-09-15 11:02:55    pyvmpop.monitoring.evtmon_windows               INFO     start(): EVENT_NO(3), EVENT(Terminate a process)
+2017-09-15 11:02:55    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): C:\Windows\System32\cmd.exe (['/C', '\\\\VBOXSVR\\VMPOP_SHARED_DIR\\windows\\get_date_time_windows.bat'])
+2017-09-15 11:02:55    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): PID(8200) is started ('process count' is 26)
+2017-09-15 11:02:55    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): \\VBOXSVR\VMPOP_SHARED_DIR\windows\monitor\procmon.exe (['/AcceptEula', '/Quiet', '/Nofilter', '/BackingFile', '\\\\VBOXSVR\\VMPOP_SHARED_DIR\\temp_d1d3f2fdf68825a4f59e0721b6e71ca409739ea1\\temp_3.pml'])
+2017-09-15 11:02:55    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): PID(8252) is started ('process count' is 27)
+2017-09-15 11:02:59    pyvmpop.monitoring.evtmon_windows               INFO     start(): The size of the first PML file is 24.0 MB
+2017-09-15 11:02:59    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): C:\Windows\System32\cmd.exe (['/C', '\\\\VBOXSVR\\VMPOP_SHARED_DIR\\windows\\get_date_time_windows.bat'])
+2017-09-15 11:02:59    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): PID(8756) is started ('process count' is 28)
+2017-09-15 11:03:00    pyvmpop.automation.auto_windows                 INFO     execute_powershell_script(): TIMEOUT_MS(60000), DELAY_S(0.1), RUN_AS_ADMIN(False)
+2017-09-15 11:03:00    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe (['-NoProfile', '-ExecutionPolicy', 'bypass', '-file', '\\\\VBOXSVR\\VMPOP_SHARED_DIR\\temp_d1d3f2fdf68825a4f59e0721b6e71ca409739ea1\\temp.ps1'])
+2017-09-15 11:03:00    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): PID(6020) is started ('process count' is 29)
+2017-09-15 11:03:05    pyvmpop.monitoring.evtmon_windows               INFO     stop(): EVENT_NO(3), AGENT_PID(8252)
+2017-09-15 11:03:05    pyvmpop.monitoring.evtmon_windows               INFO     stop(): This event took 5.649 seconds
+2017-09-15 11:03:05    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): C:\Windows\System32\cmd.exe (['/C', '\\\\VBOXSVR\\VMPOP_SHARED_DIR\\windows\\get_date_time_windows.bat'])
+2017-09-15 11:03:05    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): PID(8584) is started ('process count' is 30)
+2017-09-15 11:03:05    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): \\VBOXSVR\VMPOP_SHARED_DIR\windows\monitor\procmon.exe (['/AcceptEula', '/Terminate'])
+2017-09-15 11:03:06    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): PID(6808) is started ('process count' is 31)
+2017-09-15 11:03:09    pyvmpop.monitoring.evtmon_windows               INFO     post_process(): EVENT_NO(3), TIME_RANGE([('2017-09-15', '08:02:55', '(UTC-08:00) Pacific Time (US & Canada)'), ('2017-09-15', '08:03:05', '(UTC-08:00) Pacific Time (US & Canada)')])
+2017-09-15 11:03:09    pyvmpop.monitoring.evtmon_windows               INFO     post_process(): The size of the first PML file is 105.8 MB (110973308 Bytes)
+2017-09-15 11:03:09    pyvmpop.monitoring.evtmon_windows               INFO     convert_pml_to_csv(): Create a CSV (\\VBOXSVR\VMPOP_SHARED_DIR\temp_d1d3f2fdf68825a4f59e0721b6e71ca409739ea1\temp_3.csv) 
+2017-09-15 11:03:09    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): \\VBOXSVR\VMPOP_SHARED_DIR\windows\monitor\procmon.exe (['/AcceptEula', '/Quiet', '/OpenLog', '\\\\VBOXSVR\\VMPOP_SHARED_DIR\\temp_d1d3f2fdf68825a4f59e0721b6e71ca409739ea1\\temp_3.pml', '/LoadConfig', '\\\\VBOXSVR\\VMPOP_SHARED_DIR\\windows\\monitor\\procmon_vmpop.pmc', '/SaveApplyFilter', '/SaveAs', '\\\\VBOXSVR\\VMPOP_SHARED_DIR\\temp_d1d3f2fdf68825a4f59e0721b6e71ca409739ea1\\temp_3.csv'])
+2017-09-15 11:03:09    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): PID(8052) is started ('process count' is 32)
+2017-09-15 11:03:10    pyvmpop.monitoring.evtmon_windows               INFO     convert_pml_to_csv(): Wait until the monitor process is terminated
+2017-09-15 11:03:10    pyvmpop.monitoring.evtmon_windows               INFO     convert_pml_to_csv(): The monitor process is terminated
+2017-09-15 11:03:11    pyvmpop.logging.evtlog_manager                  INFO     save_as_csv(): Save as CSV to (C:\jungheum.park\0x01_CFReDS\2016.WR\0x02_sgrd\pyvmpop\example\simple-win\[2017-09-15_10.48.33]_Win10RS3_16257//(E_0003)_(A_0039)_(2017-09-15_08.02.55)~(2017-09-15_08.03.05)_Events.csv) 
+2017-09-15 11:03:13    pyvmpop.monitoring.evtmon_windows               INFO     start(): EVENT_NO(4), EVENT(Creating a text file 'VMPOP_example')
+2017-09-15 11:03:13    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): C:\Windows\System32\cmd.exe (['/C', '\\\\VBOXSVR\\VMPOP_SHARED_DIR\\windows\\get_date_time_windows.bat'])
+2017-09-15 11:03:13    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): PID(8700) is started ('process count' is 33)
+2017-09-15 11:03:13    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): \\VBOXSVR\VMPOP_SHARED_DIR\windows\monitor\procmon.exe (['/AcceptEula', '/Quiet', '/Nofilter', '/BackingFile', '\\\\VBOXSVR\\VMPOP_SHARED_DIR\\temp_d1d3f2fdf68825a4f59e0721b6e71ca409739ea1\\temp_4.pml'])
+2017-09-15 11:03:13    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): PID(6536) is started ('process count' is 34)
+2017-09-15 11:03:17    pyvmpop.monitoring.evtmon_windows               INFO     start(): The size of the first PML file is 20.0 MB
+2017-09-15 11:03:17    pyvmpop.hypervisor.hv_vbox                      INFO     send_event_keyboard(): PRESS(r) + HOLD(LWIN) for "Windows Run"
+2017-09-15 11:03:17    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): C:\Windows\System32\cmd.exe (['/C', '\\\\VBOXSVR\\VMPOP_SHARED_DIR\\windows\\get_date_time_windows.bat'])
+2017-09-15 11:03:17    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): PID(6788) is started ('process count' is 35)
+2017-09-15 11:03:19    pyvmpop.hypervisor.hv_vbox                      INFO     send_event_keyboard(): PRESS(notepad) + HOLD()
+2017-09-15 11:03:19    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): C:\Windows\System32\cmd.exe (['/C', '\\\\VBOXSVR\\VMPOP_SHARED_DIR\\windows\\get_date_time_windows.bat'])
+2017-09-15 11:03:20    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): PID(7780) is started ('process count' is 36)
+2017-09-15 11:03:22    pyvmpop.hypervisor.hv_vbox                      INFO     send_event_keyboard(): PRESS(ENTER) + HOLD() for "Launch Notepad.exe"
+2017-09-15 11:03:22    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): C:\Windows\System32\cmd.exe (['/C', '\\\\VBOXSVR\\VMPOP_SHARED_DIR\\windows\\get_date_time_windows.bat'])
+2017-09-15 11:03:22    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): PID(7444) is started ('process count' is 37)
+2017-09-15 11:03:24    pyvmpop.hypervisor.hv_vbox                      INFO     send_event_keyboard(): PRESS(This is an example implementation using VMPOP.   Let's save this text file.) + HOLD()
+2017-09-15 11:03:24    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): C:\Windows\System32\cmd.exe (['/C', '\\\\VBOXSVR\\VMPOP_SHARED_DIR\\windows\\get_date_time_windows.bat'])
+2017-09-15 11:03:24    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): PID(7472) is started ('process count' is 38)
+2017-09-15 11:03:33    pyvmpop.hypervisor.hv_vbox                      INFO     send_event_keyboard(): PRESS(s) + HOLD(CTRL) for "Save As"
+2017-09-15 11:03:33    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): C:\Windows\System32\cmd.exe (['/C', '\\\\VBOXSVR\\VMPOP_SHARED_DIR\\windows\\get_date_time_windows.bat'])
+2017-09-15 11:03:33    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): PID(7640) is started ('process count' is 39)
+2017-09-15 11:03:36    pyvmpop.hypervisor.hv_vbox                      INFO     send_event_keyboard(): PRESS(VMPOP_example) + HOLD()
+2017-09-15 11:03:36    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): C:\Windows\System32\cmd.exe (['/C', '\\\\VBOXSVR\\VMPOP_SHARED_DIR\\windows\\get_date_time_windows.bat'])
+2017-09-15 11:03:36    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): PID(4220) is started ('process count' is 40)
+2017-09-15 11:03:38    pyvmpop.hypervisor.hv_vbox                      INFO     send_event_keyboard(): PRESS(ENTER) + HOLD() for "Save a text file"
+2017-09-15 11:03:38    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): C:\Windows\System32\cmd.exe (['/C', '\\\\VBOXSVR\\VMPOP_SHARED_DIR\\windows\\get_date_time_windows.bat'])
+2017-09-15 11:03:39    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): PID(399647) is started ('process count' is 41)
+2017-09-15 11:03:41    pyvmpop.automation.auto_windows                 INFO     close_window()
+2017-09-15 11:03:41    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): C:\Windows\System32\cmd.exe (['/C', '\\\\VBOXSVR\\VMPOP_SHARED_DIR\\windows\\get_date_time_windows.bat'])
+2017-09-15 11:03:41    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): PID(7796) is started ('process count' is 42)
+2017-09-15 11:03:42    pyvmpop.hypervisor.hv_vbox                      INFO     send_event_keyboard(): PRESS(F4) + HOLD(ALT) for "Close the current window"
+2017-09-15 11:03:42    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): C:\Windows\System32\cmd.exe (['/C', '\\\\VBOXSVR\\VMPOP_SHARED_DIR\\windows\\get_date_time_windows.bat'])
+2017-09-15 11:03:42    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): PID(8852) is started ('process count' is 43)
+2017-09-15 11:03:45    pyvmpop.monitoring.evtmon_windows               INFO     stop(): EVENT_NO(4), AGENT_PID(6536)
+2017-09-15 11:03:45    pyvmpop.monitoring.evtmon_windows               INFO     stop(): This event took 27.769 seconds
+2017-09-15 11:03:45    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): C:\Windows\System32\cmd.exe (['/C', '\\\\VBOXSVR\\VMPOP_SHARED_DIR\\windows\\get_date_time_windows.bat'])
+2017-09-15 11:03:45    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): PID(2424) is started ('process count' is 44)
+2017-09-15 11:03:46    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): \\VBOXSVR\VMPOP_SHARED_DIR\windows\monitor\procmon.exe (['/AcceptEula', '/Terminate'])
+2017-09-15 11:03:46    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): PID(6812) is started ('process count' is 45)
+2017-09-15 11:03:49    pyvmpop.monitoring.evtmon_windows               INFO     post_process(): EVENT_NO(4), TIME_RANGE([('2017-09-15', '08:03:13', '(UTC-08:00) Pacific Time (US & Canada)'), ('2017-09-15', '08:03:45', '(UTC-08:00) Pacific Time (US & Canada)')])
+2017-09-15 11:03:49    pyvmpop.monitoring.evtmon_windows               INFO     post_process(): The size of the first PML file is 153.2 MB (160678743 Bytes)
+2017-09-15 11:03:49    pyvmpop.monitoring.evtmon_windows               INFO     convert_pml_to_csv(): Create a CSV (\\VBOXSVR\VMPOP_SHARED_DIR\temp_d1d3f2fdf68825a4f59e0721b6e71ca409739ea1\temp_4.csv) 
+2017-09-15 11:03:49    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): \\VBOXSVR\VMPOP_SHARED_DIR\windows\monitor\procmon.exe (['/AcceptEula', '/Quiet', '/OpenLog', '\\\\VBOXSVR\\VMPOP_SHARED_DIR\\temp_d1d3f2fdf68825a4f59e0721b6e71ca409739ea1\\temp_4.pml', '/LoadConfig', '\\\\VBOXSVR\\VMPOP_SHARED_DIR\\windows\\monitor\\procmon_vmpop.pmc', '/SaveApplyFilter', '/SaveAs', '\\\\VBOXSVR\\VMPOP_SHARED_DIR\\temp_d1d3f2fdf68825a4f59e0721b6e71ca409739ea1\\temp_4.csv'])
+2017-09-15 11:03:49    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): PID(5960) is started ('process count' is 46)
+2017-09-15 11:03:50    pyvmpop.monitoring.evtmon_windows               INFO     convert_pml_to_csv(): Wait until the monitor process is terminated
+2017-09-15 11:03:51    pyvmpop.monitoring.evtmon_windows               INFO     convert_pml_to_csv(): The monitor process is terminated
+2017-09-15 11:03:51    pyvmpop.logging.evtlog_manager                  INFO     save_as_csv(): Save as CSV to (C:\jungheum.park\0x01_CFReDS\2016.WR\0x02_sgrd\pyvmpop\example\simple-win\[2017-09-15_10.48.33]_Win10RS3_16257//(E_0004)_(A_0050)_(2017-09-15_08.03.13)~(2017-09-15_08.03.45)_Events.csv) 
+2017-09-15 11:03:53    pyvmpop.automation.auto_windows                 INFO     create_restore_point(): DRIVE(C:\) DESC(an example of restore point)
+2017-09-15 11:03:53    pyvmpop.monitoring.evtmon_windows               INFO     start(): EVENT_NO(5), EVENT(Create a restore point)
+2017-09-15 11:03:53    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): C:\Windows\System32\cmd.exe (['/C', '\\\\VBOXSVR\\VMPOP_SHARED_DIR\\windows\\get_date_time_windows.bat'])
+2017-09-15 11:03:54    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): PID(9188) is started ('process count' is 47)
+2017-09-15 11:03:54    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): \\VBOXSVR\VMPOP_SHARED_DIR\windows\monitor\procmon.exe (['/AcceptEula', '/Quiet', '/Nofilter', '/BackingFile', '\\\\VBOXSVR\\VMPOP_SHARED_DIR\\temp_d1d3f2fdf68825a4f59e0721b6e71ca409739ea1\\temp_5.pml'])
+2017-09-15 11:03:54    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): PID(4584) is started ('process count' is 48)
+2017-09-15 11:03:58    pyvmpop.monitoring.evtmon_windows               INFO     start(): The size of the first PML file is 24.0 MB
+2017-09-15 11:03:58    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): C:\Windows\System32\cmd.exe (['/C', '\\\\VBOXSVR\\VMPOP_SHARED_DIR\\windows\\get_date_time_windows.bat'])
+2017-09-15 11:03:58    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): PID(8980) is started ('process count' is 49)
+2017-09-15 11:03:59    pyvmpop.automation.auto_windows                 INFO     execute_powershell_script(): TIMEOUT_MS(60000), DELAY_S(0.1), RUN_AS_ADMIN(True)
+2017-09-15 11:03:59    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe (['-NoProfile', '-ExecutionPolicy', 'bypass', '-file', '\\\\VBOXSVR\\VMPOP_SHARED_DIR\\temp_d1d3f2fdf68825a4f59e0721b6e71ca409739ea1\\temp.ps1'])
+2017-09-15 11:03:59    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): PID(2404) is started ('process count' is 50)
+2017-09-15 11:04:00    pyvmpop.monitoring.evtmon_windows               INFO     stop(): EVENT_NO(5), AGENT_PID(4584)
+2017-09-15 11:04:00    pyvmpop.monitoring.evtmon_windows               INFO     stop(): This event took 2.800 seconds
+2017-09-15 11:04:00    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): C:\Windows\System32\cmd.exe (['/C', '\\\\VBOXSVR\\VMPOP_SHARED_DIR\\windows\\get_date_time_windows.bat'])
+2017-09-15 11:04:01    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): PID(6560) is started ('process count' is 51)
+2017-09-15 11:04:01    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): \\VBOXSVR\VMPOP_SHARED_DIR\windows\monitor\procmon.exe (['/AcceptEula', '/Terminate'])
+2017-09-15 11:04:02    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): PID(700) is started ('process count' is 52)
+2017-09-15 11:04:07    pyvmpop.monitoring.evtmon_windows               INFO     post_process(): EVENT_NO(5), TIME_RANGE([('2017-09-15', '08:03:53', '(UTC-08:00) Pacific Time (US & Canada)'), ('2017-09-15', '08:04:01', '(UTC-08:00) Pacific Time (US & Canada)')])
+2017-09-15 11:04:07    pyvmpop.monitoring.evtmon_windows               INFO     post_process(): The size of the first PML file is 105.2 MB (110273507 Bytes)
+2017-09-15 11:04:07    pyvmpop.monitoring.evtmon_windows               INFO     convert_pml_to_csv(): Create a CSV (\\VBOXSVR\VMPOP_SHARED_DIR\temp_d1d3f2fdf68825a4f59e0721b6e71ca409739ea1\temp_5.csv) 
+2017-09-15 11:04:07    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): \\VBOXSVR\VMPOP_SHARED_DIR\windows\monitor\procmon.exe (['/AcceptEula', '/Quiet', '/OpenLog', '\\\\VBOXSVR\\VMPOP_SHARED_DIR\\temp_d1d3f2fdf68825a4f59e0721b6e71ca409739ea1\\temp_5.pml', '/LoadConfig', '\\\\VBOXSVR\\VMPOP_SHARED_DIR\\windows\\monitor\\procmon_vmpop.pmc', '/SaveApplyFilter', '/SaveAs', '\\\\VBOXSVR\\VMPOP_SHARED_DIR\\temp_d1d3f2fdf68825a4f59e0721b6e71ca409739ea1\\temp_5.csv'])
+2017-09-15 11:04:07    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): PID(432) is started ('process count' is 53)
+2017-09-15 11:04:08    pyvmpop.monitoring.evtmon_windows               INFO     convert_pml_to_csv(): Wait until the monitor process is terminated
+2017-09-15 11:04:09    pyvmpop.monitoring.evtmon_windows               INFO     convert_pml_to_csv(): The monitor process is terminated
+2017-09-15 11:04:09    pyvmpop.logging.evtlog_manager                  INFO     save_as_csv(): Save as CSV to (C:\jungheum.park\0x01_CFReDS\2016.WR\0x02_sgrd\pyvmpop\example\simple-win\[2017-09-15_10.48.33]_Win10RS3_16257//(E_0005)_(A_0053)_(2017-09-15_08.03.53)~(2017-09-15_08.04.01)_Events.csv) 
+2017-09-15 11:04:11    pyvmpop.automation.auto_windows                 INFO     shutdown()
+2017-09-15 11:04:14    pyvmpop.hypervisor.hv_vbox                      INFO     stop_vm()
+2017-09-15 11:04:14    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): C:\Windows\System32\cmd.exe (['/C', '\\\\VBOXSVR\\VMPOP_SHARED_DIR\\windows\\get_date_time_windows.bat'])
+2017-09-15 11:04:14    pyvmpop.hypervisor.hv_vbox                      INFO     execute_process(): PID(8572) is started ('process count' is 54)
+2017-09-15 11:04:15    pyvmpop.hypervisor.hv_vbox                      INFO     close_user_session(): IEUser
+2017-09-15 11:04:29    pyvmpop.vmpop                                   INFO     close()
+2017-09-15 11:04:29    pyvmpop.hypervisor.hv_vbox                      INFO     close()
+2017-09-15 11:04:29    pyvmpop.hypervisor.hv_vbox                      INFO     close_user_session(): IEUser
+2017-09-15 11:04:32    pyvmpop.hypervisor.hv_vbox                      INFO     stop_video_capturing()
+2017-09-15 11:04:32    pyvmpop.hypervisor.hv_vbox                      INFO     stop_packet_capturing()
+2017-09-15 11:04:32    pyvmpop.extracting.extractor                    INFO     close()

@@ -1,0 +1,54 @@
+seq,date,time,timezone,class,action,method,user,desc,note
+1,,,,Common,Start VM,HV,,,
+2,,,,Input Device,Keystroke,K,IEUser,PRESS(ENTER),Select 'CFTT' account
+3,,,,Account,Logon an account,K,IEUser,ID(IEUser) PW(Passw0rd!) PIN(),
+4,,,,Input Device,Keystroke,K,IEUser,PRESS(Passw0rd!),Password
+5,,,,Input Device,Keystroke,K,IEUser,PRESS(ENTER),Try to Logon
+6,2017-09-15,07:58:29,(UTC-08:00) Pacific Time (US & Canada),Configuration,Disable UAC (User Access Control),PS,IEUser,,HKLM:SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System
+7,2017-09-15,07:58:45,(UTC-08:00) Pacific Time (US & Canada),Input Device,Click a mouse button,M,IEUser,X(512)  Y(384)  MODE(PRESS)  CLICK(LCLICK),Click the Center
+8,2017-09-15,07:58:46,(UTC-08:00) Pacific Time (US & Canada),Input Device,Click a mouse button,M,IEUser,X(512)  Y(384)  MODE(RELEASE)  CLICK(LCLICK),
+9,2017-09-15,07:58:46,(UTC-08:00) Pacific Time (US & Canada),Input Device,Keystroke,K,IEUser,PRESS(y) + HOLD(ALT),Click 'Yes'
+10,2017-09-15,07:59:00,(UTC-08:00) Pacific Time (US & Canada),Input Device,Keystroke,K,IEUser,PRESS(ESC),
+11,2017-09-15,07:59:02,(UTC-08:00) Pacific Time (US & Canada),Configuration,Disable UAC (User Access Control),PS,IEUser,,HKLM:SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System
+12,2017-09-15,07:59:13,(UTC-08:00) Pacific Time (US & Canada),Input Device,Click a mouse button,M,IEUser,X(512)  Y(384)  MODE(PRESS)  CLICK(LCLICK),Click the Center
+13,2017-09-15,07:59:13,(UTC-08:00) Pacific Time (US & Canada),Input Device,Click a mouse button,M,IEUser,X(512)  Y(384)  MODE(RELEASE)  CLICK(LCLICK),
+14,2017-09-15,07:59:14,(UTC-08:00) Pacific Time (US & Canada),Input Device,Keystroke,K,IEUser,PRESS(y) + HOLD(ALT),Click 'Yes'
+15,2017-09-15,07:59:32,(UTC-08:00) Pacific Time (US & Canada),Configuration,Disable Windows update feature,PS,IEUser,Never check for updates,
+16,2017-09-15,07:59:37,(UTC-08:00) Pacific Time (US & Canada),Common,Stop VM,HV,IEUser,,MODE(SHUT_DOWN)
+17,,,,Common,Start VM,HV,IEUser,,
+18,,,,Input Device,Keystroke,K,IEUser,PRESS(ENTER),Select 'CFTT' account
+19,,,,Account,Logon an account,K,IEUser,ID(IEUser) PW(Passw0rd!) PIN(),
+20,,,,Input Device,Keystroke,K,IEUser,PRESS(Passw0rd!),Password
+21,,,,Input Device,Keystroke,K,IEUser,PRESS(ENTER),Try to Logon
+22,2017-09-15,08:01:18,(UTC-08:00) Pacific Time (US & Canada),Special,Monitoring agent ON,EXE,IEUser,EventNo(1),EventName(Launch a program)
+23,2017-09-15,08:01:34,(UTC-08:00) Pacific Time (US & Canada),Process,Launch a program,PS,IEUser,shell:AppsFolder\Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge,
+24,2017-09-15,08:01:52,(UTC-08:00) Pacific Time (US & Canada),Special,Monitoring agent OFF,EXE,IEUser,EventNo(1),End Of EventNo(1)
+25,2017-09-15,08:02:15,(UTC-08:00) Pacific Time (US & Canada),Common,Maximize the current window,K,IEUser,,ALT + SPACE  and then 'X'
+26,2017-09-15,08:02:16,(UTC-08:00) Pacific Time (US & Canada),Input Device,Keystroke,K,IEUser,PRESS(SPACE) + HOLD(ALT),Open the menu
+27,2017-09-15,08:02:18,(UTC-08:00) Pacific Time (US & Canada),Input Device,Keystroke,K,IEUser,PRESS(x),Click 'Maximize'
+28,2017-09-15,08:02:21,(UTC-08:00) Pacific Time (US & Canada),Process,Control a process,K,IEUser,,ACTION(NEW_TAB) BROWSER(EDGE) SITE(ANY)
+29,2017-09-15,08:02:21,(UTC-08:00) Pacific Time (US & Canada),Input Device,Keystroke,K,IEUser,PRESS(t) + HOLD(CTRL),Create a new tap
+30,2017-09-15,08:02:25,(UTC-08:00) Pacific Time (US & Canada),Special,Monitoring agent ON,EXE,IEUser,EventNo(2),EventName(Control a process)
+31,2017-09-15,08:02:30,(UTC-08:00) Pacific Time (US & Canada),Process,Control a process,K,IEUser,ARG1(www.cfreds.nist.gov),ACTION(VISIT_URL) BROWSER(EDGE) SITE(ANY)
+32,2017-09-15,08:02:31,(UTC-08:00) Pacific Time (US & Canada),Input Device,Keystroke,K,IEUser,PRESS(d) + HOLD(ALT),Move the focus to the address bar
+33,2017-09-15,08:02:33,(UTC-08:00) Pacific Time (US & Canada),Input Device,Keystroke,K,IEUser,PRESS(www.cfreds.nist.gov),
+34,2017-09-15,08:02:37,(UTC-08:00) Pacific Time (US & Canada),Input Device,Keystroke,K,IEUser,PRESS(ENTER),Visit the URL
+35,2017-09-15,08:02:42,(UTC-08:00) Pacific Time (US & Canada),Special,Monitoring agent OFF,EXE,IEUser,EventNo(2),End Of EventNo(2)
+36,2017-09-15,08:02:55,(UTC-08:00) Pacific Time (US & Canada),Special,Monitoring agent ON,EXE,IEUser,EventNo(3),EventName(Terminate a process)
+37,2017-09-15,08:02:59,(UTC-08:00) Pacific Time (US & Canada),Process,Terminate a process,PS,IEUser,PID(4444),
+38,2017-09-15,08:03:05,(UTC-08:00) Pacific Time (US & Canada),Special,Monitoring agent OFF,EXE,IEUser,EventNo(3),End Of EventNo(3)
+39,2017-09-15,08:03:13,(UTC-08:00) Pacific Time (US & Canada),Special,Monitoring agent ON,EXE,IEUser,EventNo(4),EventName(Creating a text file 'VMPOP_example')
+40,2017-09-15,08:03:17,(UTC-08:00) Pacific Time (US & Canada),Input Device,Keystroke,K,IEUser,PRESS(r) + HOLD(LWIN),Windows Run
+41,2017-09-15,08:03:20,(UTC-08:00) Pacific Time (US & Canada),Input Device,Keystroke,K,IEUser,PRESS(notepad),
+42,2017-09-15,08:03:22,(UTC-08:00) Pacific Time (US & Canada),Input Device,Keystroke,K,IEUser,PRESS(ENTER),Launch Notepad.exe
+43,2017-09-15,08:03:25,(UTC-08:00) Pacific Time (US & Canada),Input Device,Keystroke,K,IEUser,PRESS(This is an example implementation using VMPOP.   Let's save this text file.),
+44,2017-09-15,08:03:33,(UTC-08:00) Pacific Time (US & Canada),Input Device,Keystroke,K,IEUser,PRESS(s) + HOLD(CTRL),Save As
+45,2017-09-15,08:03:36,(UTC-08:00) Pacific Time (US & Canada),Input Device,Keystroke,K,IEUser,PRESS(VMPOP_example),
+46,2017-09-15,08:03:39,(UTC-08:00) Pacific Time (US & Canada),Input Device,Keystroke,K,IEUser,PRESS(ENTER),Save a text file
+47,2017-09-15,08:03:41,(UTC-08:00) Pacific Time (US & Canada),Common,Close the current window,K,IEUser,,ALT + F4
+48,2017-09-15,08:03:42,(UTC-08:00) Pacific Time (US & Canada),Input Device,Keystroke,K,IEUser,PRESS(F4) + HOLD(ALT),Close the current window
+49,2017-09-15,08:03:45,(UTC-08:00) Pacific Time (US & Canada),Special,Monitoring agent OFF,EXE,IEUser,EventNo(4),End Of EventNo(4)
+50,2017-09-15,08:03:53,(UTC-08:00) Pacific Time (US & Canada),Special,Monitoring agent ON,EXE,IEUser,EventNo(5),EventName(Create a restore point)
+51,2017-09-15,08:03:58,(UTC-08:00) Pacific Time (US & Canada),System Backup,Create a restore point,PS,IEUser,DRIVE(C:\) DESC(an example of restore point),Checkpoint-Computer
+52,2017-09-15,08:04:01,(UTC-08:00) Pacific Time (US & Canada),Special,Monitoring agent OFF,EXE,IEUser,EventNo(5),End Of EventNo(5)
+53,2017-09-15,08:04:14,(UTC-08:00) Pacific Time (US & Canada),Common,Stop VM,HV,IEUser,,MODE(SHUT_DOWN)
