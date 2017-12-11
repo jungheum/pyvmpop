@@ -115,9 +115,10 @@ A VMPOP scenario to develop a system-generated registry dataset
 * Six virtual machine images (Vista, 7, 8, 8.1, 10 and 10RS1) from [Microsoft](https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/)
 * Virtual machines were imported to the VirtualBox, and then configured according to assistance scripts. (Refer to \example\cfreds-2017-winreg\building_virtualbox_environment\\)
 
-#### Details on the scenario
+#### Details on the scenario and resources
 
-* [NIST/CFReDS](https://www.cfreds.nist.gov/cfreds-2017-winreg/cfreds-2017-winreg.html)
+* [NIST/CFReDS](https://www.cfreds.nist.gov)
+* [Assistance tools for cfreds-2017-winreg](https://github.com/jungheum/cfreds-2017-winreg)
 
 
 ## License

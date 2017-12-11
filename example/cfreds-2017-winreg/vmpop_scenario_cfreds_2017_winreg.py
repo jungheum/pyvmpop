@@ -410,7 +410,7 @@ class VmPopScenarioCFReDS2017WinReg:
             vmpop.hypervisor.send_event_keyboard(['ENTER'], delay_s=1.0, note="Select 'CFTT' account")
 
         # Logon "CFTT" account
-        vmpop.automation.logon_account('CFTT', 'cftt@nist')
+        vmpop.automation.logon_account("CFTT", "cftt@nist")
 
         # Disable default runs (Vista only)
         if VmPopOSType.WindowsVista.code <= vmpop.vm_os_type.code <= VmPopOSType.WindowsVista_64.code:
