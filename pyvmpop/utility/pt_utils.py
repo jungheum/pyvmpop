@@ -93,6 +93,18 @@ class PtUtils:
             pass
 
     @staticmethod
+    def delete_dir(path):
+        """Delete a directory
+
+        Args:
+            path (str): The target path
+        """
+        try:
+            shutil.rmtree(path, ignore_errors=True)
+        except:
+            pass
+
+    @staticmethod
     def make_dir(path):
         """Make directories
 

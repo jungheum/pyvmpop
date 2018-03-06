@@ -59,7 +59,7 @@ from pyvmpop.logging.actlog_manager import ActLogManager
 # Set the global logging policy
 logging.basicConfig(
     level=logging.DEBUG,
-    format='%(asctime)-22s %(name)-47s %(levelname)-8s %(message)s',
+    format='%(asctime)s.%(msecs)03d    %(name)-47s %(levelname)-8s %(message)s',
     datefmt='%Y-%m-%d %H:%M:%S'
 )
 
@@ -76,7 +76,7 @@ def init_progress_log():
     file_handler = logging.FileHandler("last_progress_log.txt", mode='w', encoding="utf-8")
     file_handler.setLevel(logging.DEBUG)
     log_formatter = logging.Formatter(
-        fmt='%(asctime)-22s %(name)-47s %(levelname)-8s %(message)s',
+        fmt='%(asctime)s.%(msecs)03d    %(name)-47s %(levelname)-8s %(message)s',
         datefmt='%Y-%m-%d %H:%M:%S'
     )
     file_handler.setFormatter(log_formatter)
@@ -289,6 +289,10 @@ class VmPop:
             self.extractor.close()
 
         self.actlog_mgr.close()
+
+        # Delete the temporary directory
+        if os.path.isdir(self.shared_dir_host_temp) is True:
+            PtUtils.delete_dir(self.shared_dir_host_temp)
 
         # Class members
         self.vm_name = ""

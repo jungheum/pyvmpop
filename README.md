@@ -1,6 +1,6 @@
 # pyvmpop
 
-A Python implementaion of VMPOP (Virtual Machine POPulation) framework
+A Python implementation of VMPOP (Virtual Machine POPulation) framework
 
 
 ## Installation
