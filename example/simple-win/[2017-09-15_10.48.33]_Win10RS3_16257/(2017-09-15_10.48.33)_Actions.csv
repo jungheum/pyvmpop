@@ -1,6 +1,6 @@
 seq,date,time,timezone,class,action,method,user,desc,note
 1,,,,Common,Start VM,HV,,,
-2,,,,Input Device,Keystroke,K,IEUser,PRESS(ENTER),Select 'CFTT' account
+2,,,,Input Device,Keystroke,K,IEUser,PRESS(ENTER),Select 'IEUser' account
 3,,,,Account,Logon an account,K,IEUser,ID(IEUser) PW(Passw0rd!) PIN(),
 4,,,,Input Device,Keystroke,K,IEUser,PRESS(Passw0rd!),Password
 5,,,,Input Device,Keystroke,K,IEUser,PRESS(ENTER),Try to Logon
@@ -16,7 +16,7 @@ seq,date,time,timezone,class,action,method,user,desc,note
 15,2017-09-15,07:59:32,(UTC-08:00) Pacific Time (US & Canada),Configuration,Disable Windows update feature,PS,IEUser,Never check for updates,
 16,2017-09-15,07:59:37,(UTC-08:00) Pacific Time (US & Canada),Common,Stop VM,HV,IEUser,,MODE(SHUT_DOWN)
 17,,,,Common,Start VM,HV,IEUser,,
-18,,,,Input Device,Keystroke,K,IEUser,PRESS(ENTER),Select 'CFTT' account
+18,,,,Input Device,Keystroke,K,IEUser,PRESS(ENTER),Select 'IEUser' account
 19,,,,Account,Logon an account,K,IEUser,ID(IEUser) PW(Passw0rd!) PIN(),
 20,,,,Input Device,Keystroke,K,IEUser,PRESS(Passw0rd!),Password
 21,,,,Input Device,Keystroke,K,IEUser,PRESS(ENTER),Try to Logon

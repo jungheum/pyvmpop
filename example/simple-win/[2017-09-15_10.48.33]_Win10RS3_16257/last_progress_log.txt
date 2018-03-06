@@ -12,7 +12,7 @@
 2017-09-15 10:49:30    pyvmpop.hypervisor.hv_vbox                      INFO     validate_shared_directory()
 2017-09-15 10:49:30    pyvmpop.hypervisor.hv_vbox                      DEBUG    directory_exists(): Not found - \\VBOXSVR\VMPOP_SHARED_DIR
 2017-09-15 10:49:30    pyvmpop.hypervisor.hv_vbox                      INFO     create_shared_directory()
-2017-09-15 10:49:32    pyvmpop.hypervisor.hv_vbox                      INFO     send_event_keyboard(): PRESS(ENTER) + HOLD() for "Select 'CFTT' account"
+2017-09-15 10:49:32    pyvmpop.hypervisor.hv_vbox                      INFO     send_event_keyboard(): PRESS(ENTER) + HOLD() for "Select 'IEUser' account"
 2017-09-15 10:49:32    pyvmpop.automation.auto_windows                 DEBUG    get_date_time(): Shared directory is invalid (not found)
 2017-09-15 10:49:34    pyvmpop.automation.auto_windows                 INFO     logon_account()
 2017-09-15 10:49:34    pyvmpop.automation.auto_windows                 DEBUG    get_date_time(): Shared directory is invalid (not found)
@@ -82,7 +82,7 @@
 2017-09-15 10:59:52    pyvmpop.hypervisor.hv_vbox                      INFO     start_vm()
 2017-09-15 10:59:58    pyvmpop.hypervisor.hv_vbox                      INFO     wait_vm_for_booting(): Run level is 'None'
 2017-09-15 11:00:22    pyvmpop.hypervisor.hv_vbox                      INFO     wait_vm_for_booting(): Run level is 'Userland'
-2017-09-15 11:00:29    pyvmpop.hypervisor.hv_vbox                      INFO     send_event_keyboard(): PRESS(ENTER) + HOLD() for "Select 'CFTT' account"
+2017-09-15 11:00:29    pyvmpop.hypervisor.hv_vbox                      INFO     send_event_keyboard(): PRESS(ENTER) + HOLD() for "Select 'IEUser' account"
 2017-09-15 11:00:30    pyvmpop.automation.auto_windows                 INFO     logon_account()
 2017-09-15 11:00:31    pyvmpop.hypervisor.hv_vbox                      INFO     send_event_keyboard(): PRESS(Passw0rd!) + HOLD() for "Password"
 2017-09-15 11:00:32    pyvmpop.hypervisor.hv_vbox                      INFO     send_event_keyboard(): PRESS(ENTER) + HOLD() for "Try to Logon"

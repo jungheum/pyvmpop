@@ -58,7 +58,7 @@ vmpop.basic_config(
 vmpop.connect_to_vm(vm_name=vm_name, user_id=default_id, password=default_pw)
 
 # Logon the default account
-vmpop.hypervisor.send_event_keyboard(['ENTER'], delay_s=2.0, note="Select 'CFTT' account")
+vmpop.hypervisor.send_event_keyboard(['ENTER'], delay_s=2.0, note="Select 'IEUser' account")
 vmpop.automation.logon_account(default_id, default_pw)  # Logon  'IEUser' account
 
 # Set the resolution
@@ -76,7 +76,7 @@ vmpop.automation.disable_windows_update()
 vmpop.automation.restart(mode=VmPopFunctionMode.HV)
 
 # Logon the default account
-vmpop.hypervisor.send_event_keyboard(['ENTER'], delay_s=1.5, note="Select 'CFTT' account")
+vmpop.hypervisor.send_event_keyboard(['ENTER'], delay_s=1.5, note="Select 'IEUser' account")
 vmpop.automation.logon_account(default_id, default_pw)  # Logon  'IEUser' account
 
 vmpop.hypervisor.start_video_capturing("{}.webm".format(vm_name))
